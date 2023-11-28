@@ -38,7 +38,7 @@ git clone git@github.com:jsullivan94/flavorful.git
 ```
 ### Navigate to the project directory:
 ```
-cd recipe-searcher
+cd flavorful
 ```
 ### Install the required packages:
 ```
