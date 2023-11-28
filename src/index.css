@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recipe-card {
+  flex: 0 0 24%;
+  margin: 1%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card h1 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
+
+.recipe-card h3 {
+  font-size: 1.2em;
+  text-align: center;
+  color: #666;
+  padding: 5px;
+}
+
+.recipe-card img {
+  width: 100%; /* Make sure the image takes the full width of the card */
+  height: auto; /* Keep aspect ratio of the image */
+}
+
+.recipe-card div {
+  padding: 10px;
+  text-align: justify;
+}
+
+.submit {
+  position: relative;
+  background-color: black;
+  border-radius: 5px;
+  height: 2rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  font-family: monospace;
+  margin: 3px;
+}
+
+.submit:hover {
+  background-color: whitesmoke;
+  border: black;
+  color: black
+}
+
+.input-text {
+  border-radius: 5px;
+  height: 2rem;
+  width: 60%;
+  font-size: 18px;
+  font-family: monospace;
+  margin: 3px;
+}
+
+header {
+  background-color: #f2f2f2;
+ background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+header input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 300px;
+}
+
+header button {
+  margin-bottom:10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+header button:last-child {
+  margin-right: 0;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.calculator h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.calculator select,
+.calculator input[type="text"],
+.calculator input[type="submit"] {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.details h1 {
+  margin-bottom: 10px;
+}
+
+.details div {
+  margin-bottom: 5px;
+}
+
+.header_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.header_background {
+  background-color: rgb(145, 230, 152);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header_name h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+.cat_dropdown {
+  width: 200px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  cursor: pointer;
+  outline: none; /* Removes the default browser outline */
+  appearance: none; /* Removes the default browser styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.cat_dropdown:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cat_dropdown:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Login.css */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* use full height of the screen */
+  font-family: Arial, sans-serif; /* set a basic font */
+  background-color: #f4f4f4; /* light gray background */
+}
+
+.login_head {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between each item */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff; /* white background */
+  border-radius: 5px;
+  width: 300px;
+}
+
+.login_label {
+  font-weight: bold;
+}
+
+.login_input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login_button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF; /* bootstrap primary color */
+  color: #fff; /* white text */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* smooth transition for hover effect */
+}
+
+.login_button:hover {
+  background-color: #0056b3; /* darken the color on hover */
+}
+
+/* Bottom button for toggling between Signup and Login */
+.login_toggle {
+  margin-top: 20px;
+}
+
+.no_favs {
+  text-align: center;
+  color: #333;
+  margin-top: 100px;
+}
