@@ -30,11 +30,11 @@ Welcome to Flavorful, a simple yet robust recipe web application that allows you
 ### Clone this repository:
 **Using HTTPS:** 
 ```
-git clone https://github.com/jsullivan94/recipe-searcher.git
+git clone https://github.com/jsullivan94/flavorful.git
 ```
 **Using SSH:**
 ``` 
-git clone git@github.com:jsullivan94/recipe-searcher.git
+git clone git@github.com:jsullivan94/flavorful.git
 ```
 ### Navigate to the project directory:
 ```
